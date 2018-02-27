@@ -50,10 +50,10 @@ valGen <- flow_images_from_directory(
 )
 
 history <- model %>% fit_generator(
-    train_generator,
+    trainGen,
     steps_per_epoch = 100,
     epochs = 100,
-    validation_data = validation_generator,
+    validation_data = valGen,
     validation_steps = 50
 )
 
