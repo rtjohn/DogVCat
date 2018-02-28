@@ -58,4 +58,3 @@ history <- model %>% fit_generator(
 )
 plot(history)
 model %>% save_model_hdf5("models/cvd_2.h5")
-
