@@ -56,5 +56,6 @@ history <- model %>% fit_generator(
     validation_data = valGen,
     validation_steps = 50
 )
-
+plot(history)
+model %>% save_model_hdf5("models/cvd_2.h5")
 
